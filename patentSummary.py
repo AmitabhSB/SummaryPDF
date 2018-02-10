@@ -95,9 +95,9 @@ outputTXTDir = os.path.dirname(PDF_SummaryDir + '\Text_Files\\')
 if not os.path.exists(outputTXTDir):
     os.makedirs(PDF_SummaryDir + '\Text_Files\\')
             
-outputSummaryDir = os.path.dirname(PDF_SummaryDir + pdfName + '\Summary\\')
+outputSummaryDir = os.path.dirname(PDF_SummaryDir  + '\Summary' + pdfName + '\\')
 if not os.path.exists(outputSummaryDir):
-    os.makedirs(PDF_SummaryDir + pdfName + '\Summary\\')
+    os.makedirs(PDF_SummaryDir + '\Summary'+ pdfName + '\\')
 
 #Name prefix for split files
 outputNamePrefix = 'Patent'
